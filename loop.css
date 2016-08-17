@@ -1,0 +1,98 @@
+.roll {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 247px;
+	overflow: hidden;
+	margin-left: 5px;
+}
+.roll .roll-container {
+	position: absolute;
+	/*width: 3000px;*/
+	left: 0;
+}
+.roll-container > img {
+	float: left;
+	width: 461.75px;
+	height: 247px;
+}
+
+.roll-controller-prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -30px;
+	width: 30px;
+	height: 60px;
+	background-color: rgba(255,255,255,.4);
+}
+.roll-controller-prev:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -20px;
+	width: 0;
+	height: 0;
+	border: none;
+	border-right: 20px solid rgba(0,0,0,.1);
+	border-top: 20px solid rgba(255,255,255,0);
+	border-bottom: 20px solid rgba(255,255,255,0);
+}
+.roll-controller-next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -30px;
+	width: 30px;
+	height: 60px;
+	background-color: rgba(255,255,255,.4);
+}
+.roll-controller-next:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -20px;
+	width: 0;
+	height: 0;
+	border: none;
+	border-left: 20px solid rgba(0,0,0,.1);
+	border-top: 20px solid rgba(255,255,255,0);
+	border-bottom: 20px solid rgba(255,255,255,0);
+}
+.roll-controller-next:hover {
+	background-color: rgba(255,255,255,.5);
+}
+.roll-controller-next:hover:before {
+	border-left: 20px solid rgba(0,0,0,.2);
+}
+.roll-controller-prev:hover {
+	background-color: rgba(255,255,255,.5);
+}
+.roll-controller-prev:hover:before {
+	border-right: 20px solid rgba(0,0,0,.2);
+}
+.roll-controller-list {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+	padding: 5px 5px;
+	background-color: rgba(255,255,255,.5);
+}
+.roll-controller-list > li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 2px 2px;
+	background-color: rgba(0,0,0,.1);
+}
+.roll-controller-list > li:hover {
+	background-color: rgba(0,0,0,.3);
+}
+.roll-controller-list > li.roll-controller-list-item-active {
+	background-color: rgba(0,0,0,.5);
+}
